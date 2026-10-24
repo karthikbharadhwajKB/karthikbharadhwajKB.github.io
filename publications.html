@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications — Ganesh Pavan Kartikeya Bharadwaj Kolluri</title>
+  <meta name="description" content="Research on encoder pruning, knowledge distillation, speech recognition, demographic fairness and encoder-free audio captioning.">
+  <link rel="canonical" href="https://karthikbharadhwajkb.github.io/publications.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Publications — Ganesh Pavan Kartikeya Bharadwaj Kolluri">
+  <meta property="og:description" content="Research on encoder pruning, knowledge distillation, speech recognition, demographic fairness and encoder-free audio captioning.">
+  <meta property="og:url" content="https://karthikbharadhwajkb.github.io/publications.html">
+  <meta property="og:image" content="https://karthikbharadhwajkb.github.io/assets/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image:alt" content="Portrait of Karthik Kolluri">
+  <meta name="twitter:image:alt" content="Portrait of Karthik Kolluri">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <script>(function(){try{var t=localStorage.getItem("kk-theme");if(t==="dark"||t==="light"){document.documentElement.setAttribute("data-theme",t);}}catch(e){}})();</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">Ganesh Pavan Kartikeya Bharadwaj Kolluri</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/publications.html" aria-current="page">Publications</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/contact.html">Contact</a>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+          <span class="theme-dot" aria-hidden="true"></span>
+          <span class="theme-label">Dark</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap page-head">
+      <h1>Publications</h1>
+      <p class="intro">My research asks what happens when speech and audio language models are made smaller: which capabilities are lost, what adaptation can recover, and how the effects differ across speakers. These publications examine that question through encoder pruning, knowledge distillation, and group-level evaluation.</p>
+      <p class="intro-note">Newest first. Also indexed on <a href="https://scholar.google.com/citations?user=mIv1JY0AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>, <a href="https://www.semanticscholar.org/author/Ganesh-Pavan-Kartikeya-Bharadwaj-Kolluri/2426796570" target="_blank" rel="noopener">Semantic Scholar</a> and <a href="https://orcid.org/0009-0007-8549-4474" target="_blank" rel="noopener">ORCID</a>.</p>
+    </div>
+
+    <div class="wrap page-body">
+
+      <div class="year-head reveal line-reveal">
+        <h2>2026</h2>
+        <span>3 entries</span>
+      </div>
+
+      <article class="pub reveal" id="kolluri2026card">
+        <span class="pub-num" aria-hidden="true">[3]</span>
+        <div class="pub-body">
+          <h3>CARD: Cross-component Audio Representation Distillation for Encoder-Free Audio Captioning</h3>
+          <p class="pub-authors"><span class="me">Ganesh Pavan Kartikeya Bharadwaj Kolluri</span>, Yuchen Zhang, Michael Kampouridis, Ravi Shekhar. <em>IEEE Spoken Language Technology Workshop (SLT)</em>, Palermo, December 2026. To appear.</p>
+          <p class="pub-finding"><span class="finding-label">Key finding</span>Removes the audio encoder at inference through cross-component knowledge distillation. A 13.2M-parameter projector supports encoder-free audio captioning.</p>
+          <p class="pub-abstract">Most audio captioning systems retain a pretrained audio encoder at inference. CARD explores whether that encoder's knowledge can instead be distilled into a smaller architecture. During training, a pretrained audio teacher transfers representations into a 13.2M-parameter projector and the language model; the teacher is discarded for inference. Cross-component distillation improves CIDEr-D by 11.9 on AudioCaps and 5.0 on Clotho over LLM-only distillation. CARD reaches 55.4 CIDEr-D on AudioCaps, compared with 66.4 for an encoder-retaining reference, illustrating both the potential and remaining performance gap of encoder-free captioning.</p>
+          <div class="pub-links">
+            <span class="badge">Accepted</span>
+            <a href="https://arxiv.org/abs/2607.04619" target="_blank" rel="noopener">arXiv</a>
+            <a href="https://arxiv.org/pdf/2607.04619" target="_blank" rel="noopener">PDF</a>
+            <a href="https://github.com/karthikbharadhwajKB/CARD" target="_blank" rel="noopener">Code</a>
+            <a href="https://huggingface.co/spaces/KarthikKB1998/CARD-Audio-Captioning" target="_blank" rel="noopener">Demo</a>
+            <button type="button" class="linkbtn" data-toggle="bib-card">BibTeX</button>
+          </div>
+          <pre class="bibtex" id="bib-card" hidden>@inproceedings{kolluri2026card,
+  title         = {{CARD}: Cross-component Audio Representation Distillation for Encoder-Free Audio Captioning},
+  author        = {Kolluri, Ganesh Pavan Kartikeya Bharadwaj and Zhang, Yuchen and Kampouridis, Michael and Shekhar, Ravi},
+  booktitle     = {Proceedings of the IEEE Spoken Language Technology Workshop (SLT)},
+  month         = dec,
+  year          = {2026},
+  address       = {Palermo, Italy},
+  note          = {To appear},
+  eprint        = {2607.04619},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.SD}
+}</pre>
+        </div>
+      </article>
+
+      <article class="pub reveal" id="kolluri2026fairness">
+        <span class="pub-num" aria-hidden="true">[2]</span>
+        <div class="pub-body">
+          <h3>Pruning for Efficiency, Paying in Fairness: Demographic Disparities in Pruned Speech-LLMs</h3>
+          <p class="pub-authors"><span class="me">Ganesh Pavan Kartikeya Bharadwaj Kolluri</span>, Michael Kampouridis, Ravi Shekhar. <em>IMPACT-SPEECH Workshop at EMNLP 2026</em>, Budapest, October 2026. To appear (oral).</p>
+          <p class="pub-finding"><span class="finding-label">Key finding</span>Pruning can widen recognition disparities between speaker groups even when aggregate accuracy appears stable or improves in a reported experimental setting.</p>
+          <p class="pub-abstract">Evaluating compression only through average word error rate can hide unequal effects across speakers. Using Fair-Speech and Common Voice, this study examines how pruning SLAM-ASR changes group-level recognition performance. In one Fair-Speech Whisper-Large experiment, removing two encoder layers improves aggregate WER from 21.6% to 21.1%, while WER increases for Black speakers. Across greater pruning depth, the Black–Asian WER gap expands from 13.5 to 24.5 percentage points. Accent gaps on Common Voice persist but do not clearly widen. The findings support including per-group and worst-group WER in model evaluation.</p>
+          <div class="pub-links">
+            <span class="badge">Accepted</span>
+            <a href="https://arxiv.org/abs/2609.38106" target="_blank" rel="noopener">arXiv</a>
+            <a href="https://arxiv.org/pdf/2609.38106" target="_blank" rel="noopener">PDF</a>
+            <a href="https://github.com/karthikbharadhwajKB/SpeechLLM-Pruning-Fairness" target="_blank" rel="noopener">Code</a>
+            <button type="button" class="linkbtn" data-toggle="bib-fairness">BibTeX</button>
+          </div>
+          <pre class="bibtex" id="bib-fairness" hidden>@inproceedings{kolluri2026fairness,
+  title     = {Pruning for Efficiency, Paying in Fairness: Demographic Disparities in Pruned Speech-{LLM}s},
+  author    = {Kolluri, Ganesh Pavan Kartikeya Bharadwaj and Kampouridis, Michael and Shekhar, Ravi},
+  booktitle = {Proceedings of the IMPACT-SPEECH Workshop (Identifying, Measuring, Preventing, and Assessing Consequences of Bias in Speech LLMs) at EMNLP 2026},
+  month     = oct,
+  year      = {2026},
+  address   = {Budapest, Hungary},
+  note      = {To appear},
+  eprint        = {2609.38106},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.SD}
+}</pre>
+        </div>
+      </article>
+
+      <article class="pub reveal" id="kolluri2026encoderdepth">
+        <span class="pub-num" aria-hidden="true">[1]</span>
+        <div class="pub-body">
+          <h3>On the Role of Encoder Depth: Pruning Whisper and LoRA Fine-Tuning in SLAM-ASR</h3>
+          <p class="pub-authors"><span class="me">Ganesh Pavan Kartikeya Bharadwaj Kolluri</span>, Michael Kampouridis, Ravi Shekhar. <em>Proceedings of Speech Language Models in Low-Resource Settings: Performance, Evaluation, and Bias Analysis (SPEAKABLE) @ LREC 2026</em>, pp. 183–193.</p>
+          <p class="pub-finding"><span class="finding-label">Key finding</span>Selective Whisper encoder pruning plus LoRA can outperform the study's unpruned baseline while reducing total parameters by 7–14%.</p>
+          <p class="pub-abstract">This paper studies how much of Whisper's encoder can be pruned when it provides acoustic features to a speech–language model, and whether LoRA fine-tuning of the language model can compensate. Across three encoder sizes, three languages and more than 200 training runs, removing two encoder layers incurs only 2–4% WER degradation in the reported experiments. Combining pruning with LoRA surpasses the study's unpruned baseline while reducing total parameters by 7–14%. The analysis also shows that recovery depends on the language and available training data, with different error patterns for lower-resource Danish.</p>
+          <div class="pub-links">
+            <a href="https://aclanthology.org/2026.speakable-1.20/" target="_blank" rel="noopener">ACL Anthology</a>
+            <a href="https://arxiv.org/abs/2603.27981" target="_blank" rel="noopener">arXiv</a>
+            <a href="https://arxiv.org/pdf/2603.27981" target="_blank" rel="noopener">PDF</a>
+            <a href="https://github.com/karthikbharadhwajKB/SLAM-ASR-Encoder-Pruning-LoRA" target="_blank" rel="noopener">Code</a>
+            <button type="button" class="linkbtn" data-toggle="bib-encoderdepth">BibTeX</button>
+          </div>
+          <pre class="bibtex" id="bib-encoderdepth" hidden>@inproceedings{kolluri2026encoderdepth,
+  title         = {On the Role of Encoder Depth: Pruning {Whisper} and {LoRA} Fine-Tuning in {SLAM-ASR}},
+  author        = {Kolluri, Ganesh Pavan Kartikeya Bharadwaj and Kampouridis, Michael and Shekhar, Ravi},
+  booktitle     = {Proceedings of Speech Language Models in Low-Resource Settings: Performance, Evaluation, and Bias Analysis ({SPEAKABLE}) @ {LREC} 2026},
+  month         = may,
+  year          = {2026},
+  address       = {Palma, Mallorca (Spain)},
+  publisher     = {ELRA Language Resources Association (ELRA)},
+  pages         = {183--193},
+  url           = {https://aclanthology.org/2026.speakable-1.20/},
+  doi           = {10.63317/2pbwm223zmqx},
+  eprint        = {2603.27981},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL}
+}</pre>
+        </div>
+      </article>
+
+      <div class="year-head reveal line-reveal">
+        <h2>2023</h2>
+        <span>Thesis</span>
+      </div>
+
+      <article class="pub reveal" id="kolluri2023thesis">
+        <span class="pub-num" aria-hidden="true">[T]</span>
+        <div class="pub-body">
+          <h3>Autonomous Pagination for Newspapers from a Predefined Plan</h3>
+          <p class="pub-authors"><span class="me">Ganesh Pavan Kartikeya Bharadwaj Kolluri</span>. MSc thesis, <em>Alma Mater Studiorum – Università di Bologna</em>, 2023.</p>
+          <p class="pub-abstract">My MSc thesis explored reinforcement learning for automatic newspaper page layout. Given a set of articles and a predefined editorial plan, the system learns how to position content on the page. The work was later developed into a production pagination system at Eidosmedia, where it was trained and evaluated using a purpose-built corpus of published newspapers.</p>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 Ganesh Pavan Kartikeya Bharadwaj Kolluri</p>
+      <p>Last updated October 2026</p>
+    </div>
+  </footer>
+
+  <script src="/main.js" defer></script>
+</body>
+</html>

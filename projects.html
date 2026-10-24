@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Ganesh Pavan Kartikeya Bharadwaj Kolluri</title>
+  <meta name="description" content="Applied AI work in commodity trading and news publishing, including RAG, LLM agents, reinforcement learning and research implementations.">
+  <link rel="canonical" href="https://karthikbharadhwajkb.github.io/projects.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects — Ganesh Pavan Kartikeya Bharadwaj Kolluri">
+  <meta property="og:description" content="Applied AI work in commodity trading and news publishing, including RAG, LLM agents, reinforcement learning and research implementations.">
+  <meta property="og:url" content="https://karthikbharadhwajkb.github.io/projects.html">
+  <meta property="og:image" content="https://karthikbharadhwajkb.github.io/assets/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image:alt" content="Portrait of Karthik Kolluri">
+  <meta name="twitter:image:alt" content="Portrait of Karthik Kolluri">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <script>(function(){try{var t=localStorage.getItem("kk-theme");if(t==="dark"||t==="light"){document.documentElement.setAttribute("data-theme",t);}}catch(e){}})();</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">Ganesh Pavan Kartikeya Bharadwaj Kolluri</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/publications.html">Publications</a>
+        <a href="/projects.html" aria-current="page">Projects</a>
+        <a href="/contact.html">Contact</a>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+          <span class="theme-dot" aria-hidden="true"></span>
+          <span class="theme-label">Dark</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap page-head">
+      <h1>Projects</h1>
+      <p class="intro">I build AI systems that help people work with complex information, from natural-language tools for enterprise software and news archives to automated publishing workflows. This page also includes code released alongside my speech and audio AI research.</p>
+    </div>
+
+    <div class="wrap page-body">
+
+      <section class="section" aria-labelledby="industry-title">
+        <h2 class="section-title reveal" id="industry-title">Industry projects</h2>
+
+        <div class="project-list">
+          <article class="project reveal">
+            <div class="project-meta">
+              <p class="org">Hivedome Ltd.</p>
+              <p class="when">2025 – present</p>
+            </div>
+            <div class="project-body">
+              <h3>ASK ITAS — AI Assistant for Commodity Trading</h3>
+              <p>As a KTP Associate at Hivedome, I'm developing ASK ITAS, an AI assistant for ITAS, the company's commodity trading and risk management platform. The first release supports natural-language questions over product knowledge, with answers grounded in referenced sources.</p>
+              <p>I'm extending it towards an agentic workflow that can query live Data Portal records and ask clarifying questions when additional context is needed. These tool-driven capabilities are in development.</p>
+              <p class="stack">LLM Agents · RAG · Tool Use · Enterprise AI</p>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-meta">
+              <p class="org">Eidosmedia</p>
+              <p class="when">2023 – 2025</p>
+            </div>
+            <div class="project-body">
+              <h3>Question Answering Over Newspaper Archives</h3>
+              <p>Built a retrieval-augmented question-answering assistant for editorial teams using large newspaper archives. The system retrieves relevant articles and returns answers with source citations. I contributed retrieval design, news-domain language-model adaptation, and AWS-based training and deployment pipelines.</p>
+              <p class="stack">RAG · Semantic Retrieval · NLP · AWS</p>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-meta">
+              <p class="org">Eidosmedia</p>
+              <p class="when">2022 – 2024</p>
+            </div>
+            <div class="project-body">
+              <h3>Autonomous Newspaper Pagination</h3>
+              <p>Developed a reinforcement-learning system for arranging newspaper articles into page layouts based on an editorial plan. The project began as my MSc thesis at the University of Bologna and was subsequently developed into a production system at Eidosmedia.</p>
+              <p>The work included assembling a corpus of published newspapers for training and evaluation, and developing the models used to make layout decisions under the constraints of the editorial plan.</p>
+              <p class="stack">Reinforcement Learning · Dataset Development · Production ML</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="code-title">
+        <h2 class="section-title reveal" id="code-title">Research implementations</h2>
+        <ul class="repo-list">
+          <li class="reveal">
+            <a href="https://github.com/karthikbharadhwajKB/CARD" target="_blank" rel="noopener">CARD</a>
+            <span>Training, distillation and inference code for encoder-free audio captioning, along with model resources and checkpoints.</span>
+            <span class="repo-links"><a href="https://arxiv.org/abs/2607.04619" target="_blank" rel="noopener">Paper</a><a href="https://huggingface.co/spaces/KarthikKB1998/CARD-Audio-Captioning" target="_blank" rel="noopener">Demo</a></span>
+          </li>
+          <li class="reveal">
+            <a href="https://github.com/karthikbharadhwajKB/SpeechLLM-Pruning-Fairness" target="_blank" rel="noopener">SpeechLLM-Pruning-Fairness</a>
+            <span>Experiments for speech-encoder pruning and demographic-group evaluation using Fair-Speech and Common Voice.</span>
+            <span class="repo-links"><a href="https://arxiv.org/abs/2609.38106" target="_blank" rel="noopener">Paper</a></span>
+          </li>
+          <li class="reveal">
+            <a href="https://github.com/karthikbharadhwajKB/SLAM-ASR-Encoder-Pruning-LoRA" target="_blank" rel="noopener">SLAM-ASR-Encoder-Pruning-LoRA</a>
+            <span>Code and configurations for Whisper encoder-depth experiments, projector training, and LoRA adaptation in SLAM-ASR.</span>
+            <span class="repo-links"><a href="https://aclanthology.org/2026.speakable-1.20/" target="_blank" rel="noopener">Paper</a></span>
+          </li>
+        </ul>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 Ganesh Pavan Kartikeya Bharadwaj Kolluri</p>
+      <p>Last updated October 2026</p>
+    </div>
+  </footer>
+
+  <script src="/main.js" defer></script>
+</body>
+</html>
